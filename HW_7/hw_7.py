@@ -44,7 +44,9 @@ class Data:
 
 # 2. Затем считать из файла MOCK_DATA.txt, в котором 1000 строк с данными (Имя и Фамилия, почта, название файла с расширением и код цвета)
 # 3. Из каждой считанной строки создать объект класса data и добавить его в список.
-
+obj = Data(full_name, email, color, file_name)
+data_list = []
+data_list.append(obj)
 
 with open('MOCK_DATA.txt', 'r',encoding='utf-8') as file:
     list = file.readlines()
